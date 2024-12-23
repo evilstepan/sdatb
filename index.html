@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ковалев Степан</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Степан<span>.</span></h1>
+        <nav class="nav">
+            <a href="#">НАВЫКИ</a>
+            <a href="#">ОПЫТ</a>
+            <a href="#">ОБРАЗОВАНИЕ</a>
+            <a href="#">ПОРТФОЛИО</a>
+            <a href="#">СВЯЗАТЬСЯ СО МНОЙ</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>Я Ковалев Степан<span>.</span></h2>
+            <p>Привет! Меня зовут Ковалев Степан, и я начинающий фронтенд разработчик с увлечением к созданию красивых и функциональных веб-приложений.</p>
+
+            <div class="info">
+                <div><span>ТЕЛЕФОН</span> +79065614322</div>
+                <div><span>ЭЛЕКТРОННАЯ ПОЧТА</span> stepan.kovalev.14@mail.ru</div>
+                <div><span>АДРЕС</span> улица красный проспект 13</div>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <h2>Обратная связь</h2>
+            <div class="buttons">
+                <form id="contactForm">
+                    <input type="email" id="email" placeholder="Введите ваш email" required>
+                    <button id="loadProjects">Отправить приглашение</button>
+                </form>
+                <button id="openModal" id="loadProjects">Мое резюме</button>
+                <div id="projectsContainer"></div>
+            </div>
+            
+           
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="close-button">&times;</span>
+                    <img class="imgzxc" src="Снимок экрана 2024-12-23 175250.png" alt="Скриншот" style="width:494px;">
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="image">
+            <img alt="Мужчина stepan" src="-7aJwY1i9YA.jpg" width="600" height="400"/>
+        </div>
+    </div>
+
+    <h1 class="tuk">Портфолио</h1>
+
+    <!-- Портфолио -->
+    <div class="portfolio-container">
+        <div class="portfolio-item scroll-effect">
+            <div class="image-text-container">
+                <img class="img" src="Снимок экрана 2024-12-15 050806.png" alt="">
+                <div class="text-overlay">
+                    <span class="toggle-text" onclick="toggleText(this)">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                    <div class="description">Профсоюз — это организация, созданная для защиты прав и интересов работников, особенно начинающих специалистов.</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="portfolio-item scroll-effect">
+            <div class="image-text-container">
+                <img class="img" src="two.png" alt="">
+                <div class="text-overlay">
+                    <span class="toggle-text" onclick="toggleText(this)">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                    <div class="description">Телефонный справочник — это веб-приложение, предназначенное для упрощения поиска контактной информации и связи с людьми и организациями.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Другие проекты -->
+    <h2 class="projects-title">Другие проекты</h2>
+    <div class="projects-container">
+        <div class="project-item scroll-effect">
+            <h3>Классическая змейка</h3>
+            <p>Это простая, но увлекательная игра, в которой игрок управляет змеей, которая растет по мере поедания пищи.</p>
+            <div class="project-footer">HTML, CSS, JavaScript</div>
+        </div>
+
+        <div class="project-item scroll-effect">
+            <h3>Угадай число</h3>
+            <p>Это простая игра на угадывание, в которой игроку нужно угадать случайное число, сгенерированное компьютером.</p>
+            <div class="project-footer">HTML, CSS, JavaScript</div>
+        </div>
+
+        <div class="project-item scroll-effect">
+            <h3>Головоломка "Собери картинку"</h3>
+            <p>Это игра-головоломка, в которой игроку необходимо собрать изображение из перемешанных фрагментов.</p>
+            <div class="project-footer">HTML, CSS, JavaScript</div>
+        </div>
+    </div>
+    <!-- Языки программирования -->
+    <h2 class="projects-title">Освоенные навыки</h2>
+    <div class="languages-container">
+        <div class="language-box scroll-effect">
+            <img src="free-icon-html-1051277.png" alt="HTML Icon" />
+            <h3>HTML</h3>
+            <p>Основы веб-разработки и разметки.</p>
+        </div>
+        <div class="language-box scroll-effect">
+            <img src="free-icon-css-1062304.png" alt="CSS Icon" />
+            <h3>CSS</h3>
+            <p>Стилизация веб-страниц и адаптивный дизайн.</p>
+        </div>
+        <div class="language-box scroll-effect">
+            <img src="free-icon-file-11684831.png" alt="JavaScript Icon" />
+            <h3>JavaScript</h3>
+            <p>Динамическое поведение веб-страниц.</p>
+        </div>
+        <div class="language-box scroll-effect">
+            <img src="free-icon-python-file-12515865.png" alt="Python Icon" />
+            <h3>Python</h3>
+            <p>Программирование и автоматизация задач.</p>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Обо мне</h3>
+                <p>Я Ковалев Степан, начинающий фронтенд разработчик с увлечением к созданию красивых и функциональных веб-приложений.</p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Полезные ссылки</h3>
+                <ul>
+                    <li><a href="#">НАВЫКИ</a></li>
+                    <li><a href="#">ОПЫТ</a></li>
+                    <li><a href="#">ОБРАЗОВАНИЕ</a></li>
+                    <li><a href="#">ПОРТФОЛИО</a></li>
+                    <li><a href="#">СВЯЗАТЬСЯ СО МНОЙ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Социальные сети</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-vk"></i></a> 
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a> 
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Нижний колонтитул -->
+        <div class="footer-bottom">&copy; 2024 Ковалев Степан. Все права защищены.</div>
+    </footer>
+
+    
+</body>
+</html>
